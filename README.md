@@ -24,6 +24,8 @@ Collected data will be validated and securely stored in an Azure SQL database.
 - **Azure Key Vault** (for secret management)
 - **Bot Framework SDK** (Python)
 
+Project architecture is illustrated in the `/diagrams/architecture/` folder with draw.io, PNG and PDF formats.
+
 ---
 
 ## Repository Structure
@@ -33,11 +35,15 @@ azure-voice-bot/
 │
 ├── README.md
 ├── docs/
-│   ├── Milestone1_Concept.pdf
 │   └── dialog_flow.drawio
 ├── diagrams/
-│   └── dialog_flow.png
-└── src/ (will contain the bot code)
+│   ├── dialog_flow.png
+│   └── architecture/
+│       ├── azure_architecture.drawio
+│       ├── azure_architecture.png
+│       └── azure_architecture.pdf
+├── src/
+│   └── (bot source code to be added here)
 ```
 
 ---
@@ -52,8 +58,8 @@ azure-voice-bot/
 
 ---
 
-## Author
+## ✍️ Author
 
-Abdelrahman Moustafa  
-M.Sc. Student – TH Brandenburg  
+Abderrahman Moustafa  
+M.Sc. Student – Software Architecture  
 Brandenburg, Germany
