@@ -1,4 +1,4 @@
-'''import pyodbc
+import pyodbc
 from config import settings
 
 def get_db_connection():
@@ -34,9 +34,9 @@ def save_user_to_db(data):
     ))
     conn.commit()
     conn.close()
-'''
 
-import sqlite3
+
+'''import sqlite3
 
 DB_NAME = "userdb.sqlite"
 
@@ -84,3 +84,4 @@ def save_user_to_db(data):
     ))
     conn.commit()
     conn.close()
+'''
