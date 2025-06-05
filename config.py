@@ -19,6 +19,9 @@ class Settings(BaseSettings):
     clu_project: str
     clu_deployment: str
 
+    speech_key: str
+    speech_region: str
+
     class Config:
         env_file = ".env"
 
