@@ -21,9 +21,11 @@ async def messages(req: web.Request) -> web.Response:
     auth_header = req.headers.get("Authorization", "")
 
     response = await adapter.process_activity(activity, auth_header, bot.on_turn)
-    if response:
+    if response and hasattr(response, "body"):
         return web.json_response(data=response.body, status=response.status)
-    return web.Response(status=201)
+    else:
+        return web.Response(text="Bot handled message.", status=200)
+
 
 app = web.Application()
 app.router.add_post("/api/messages", messages)
